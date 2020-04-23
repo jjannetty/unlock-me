@@ -48,8 +48,7 @@ body.level-1 {
 }
 
 .level-1-trigger {
-  left: 700px;
-  top: 700px;
+  display: none;
 }
 
 body.level-2 {

@@ -23,6 +23,26 @@ function windowResize(callback) {
   }
 }
 
+function setTriggerPosition() {
+  let windowHeight = window.innerHeight;
+  let windowWidth = window.innerWidth;
+  let trigger = document.querySelector('.level-1-trigger');
+
+  trigger.style.top = [getRandomInt(windowHeight - 10), 'px'].join('');
+  trigger.style.left = [getRandomInt(windowWidth - 10), 'px'].join('');
+  trigger.style.display = 'block';
+}
+
+function getRandomInt(max) {
+  let min = 500;
+  let randomNumber = Math.random() * (max - min) + min;
+
+  console.log(randomNumber);
+
+  return Math.floor(randomNumber);
+}
+
 window.initLevel1 = function(callback) {
+  setTriggerPosition();
   windowResize(callback);
 }
