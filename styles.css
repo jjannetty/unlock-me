@@ -6,33 +6,75 @@ body.level-1 {
   background: #53e6c6;
 }
 
-.level-1-trigger {
-  left: 700px;
+.angle {
   position: absolute;
-  top: 700px;
 }
 
-.level-1-trigger:after {
+.angle:after {
   background: white;
   content: '';
   display: block;
-  height: 1px;
-  left: -19.5px;
+  height: 2px;
+  left: -18.5px;
   position: absolute;
   width: 20px;
+
 }
 
-.level-1-trigger:before {
+.angle:before {
   background: white;
   content: '';
   display: block;
   height: 20px;
   position: absolute;
-  top: -19.5px;
-  width: 1px;
+  top: -18.5px;
+  width: 2px;
+}
+
+.angle-rot-45 {
+  transform: rotate(45deg);
+}
+
+.angle-rot-135 {
+  transform: rotate(135deg);
+}
+
+.angle-rot-225 {
+  transform: rotate(225deg);
+}
+
+.angle-rot-315 {
+  transform: rotate(315deg);
+}
+
+.level-1-trigger {
+  left: 700px;
+  top: 700px;
 }
 
 body.level-2 {
   background: #e6bc53;
 }
 
+.level-2-prompt {
+  color: white;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+
+.level-2-symbol {
+  display: inline-block;
+  margin: 0 20px;
+  height: 1px;
+  position: relative;
+}
+
+body.level-3 {
+  background: #ba81e6;
+}
+
+.hide {
+  display: none;
+}

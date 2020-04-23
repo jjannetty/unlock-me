@@ -4,15 +4,35 @@
   <title>unlock me</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <script type="text/javascript" src="level_1.js"></script>
+  <script type="text/javascript" src="level_2.js"></script>
 </head>
 <body class="level-1">
 
+  <div id="level-2" class="hide">
+    <div class="level-2-prompt">
+      <div class="level-2-symbol">
+        <span class="angle angle-rot-225"></span>
+      </div>
+      <div class="level-2-symbol">
+        <span class="angle angle-rot-45"></span>
+      </div>
+      <div class="level-2-symbol">
+        <span class="angle angle-rot-135"></span>
+      </div>
+      <div class="level-2-symbol">
+        <span class="angle angle-rot-315"></span>
+      </div>
+    </div>
+  </div>
+
   <div id="level-1">
-    <div class="level-1-trigger"></div>
+    <div class="level-1-trigger angle"></div>
   </div>
 
   <script type="text/javascript">
-    initLevel1(document.querySelector('.level-1-trigger'));
+    initLevel1(function(){
+      initLevel2();
+    });
   </script>
 </body>
 </html>
