@@ -1,0 +1,38 @@
+body {
+  transition: background 0.3s;
+}
+
+body.level-1 {
+  background: #53e6c6;
+}
+
+.level-1-trigger {
+  left: 700px;
+  position: absolute;
+  top: 700px;
+}
+
+.level-1-trigger:after {
+  background: white;
+  content: '';
+  display: block;
+  height: 1px;
+  left: -19.5px;
+  position: absolute;
+  width: 20px;
+}
+
+.level-1-trigger:before {
+  background: white;
+  content: '';
+  display: block;
+  height: 20px;
+  position: absolute;
+  top: -19.5px;
+  width: 1px;
+}
+
+body.level-2 {
+  background: #e6bc53;
+}
+
