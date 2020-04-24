@@ -17,8 +17,7 @@ function trackKeyStrokes() {
     pressedKeys.push(event.keyCode);
 
     if (pressedKeysMatchSolution(pressedKeys, solution)) {
-      document.getElementsByTagName('body')[0].className = 'level-3';
-      levelTwo.remove();
+      setNextLevel(2, initLevel3())
     }
   });
 }
@@ -68,6 +67,6 @@ function pressedKeysMatchSolution(pressedKeys, solution) {
 
 
 window.initLevel2 = function() {
-  document.getElementById('level-2').style.display = 'block';
+  console.log('level 2 started')
   trackKeyStrokes();
 }

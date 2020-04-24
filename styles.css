@@ -2,10 +2,6 @@ body {
   transition: background 0.3s;
 }
 
-body.level-1 {
-  background: #53e6c6;
-}
-
 .angle {
   position: absolute;
 }
@@ -51,11 +47,15 @@ body.level-1 {
   transform: rotate(315deg);
 }
 
+.level-1 {
+  background: #53e6c6;
+}
+
 .level-1-trigger {
   display: none;
 }
 
-body.level-2 {
+.level-2 {
   background: #e6bc53;
 }
 
@@ -74,9 +74,102 @@ body.level-2 {
   position: relative;
 }
 
-body.level-3 {
+.level-3 {
   background: #ba81e6;
 }
+
+.level-3-symbol {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 34px;
+}
+
+.level-3-symbol-line {
+  background: white;
+  position: absolute;
+  height: 20px;
+  width: 2px;
+}
+
+.level-3-symbol-1 .symbol-1-line-1{
+  left: 50%;
+  margin-left: -1px;
+}
+
+.level-3-symbol-2 .symbol-2-line-1{
+  transform: rotate(45deg) translate(6.5px, -6.5px);
+}
+
+.level-3-symbol-2 .symbol-2-line-2{
+  transform: rotate(135deg) translate(-15.5px, -15.5px);
+}
+
+.level-3-symbol-3 .symbol-3-line-1{
+  transform: rotate(30deg) translate(8px, -3px);
+}
+
+.level-3-symbol-3 .symbol-3-line-2{
+  transform: rotate(330deg) translate(15.5px, 10.5px);
+}
+
+.level-3-symbol-3 .symbol-3-line-3{
+  transform: rotate(90deg) translate(10.5px, -13.5px);
+}
+
+.level-3-symbol-4 .symbol-4-line-1 {}
+
+.level-3-symbol-4 .symbol-4-line-2 {
+  transform: rotate(90deg) translate(-10px, -10px);
+}
+
+.level-3-symbol-4 .symbol-4-line-3 {
+  transform: translateX(20px);
+}
+
+.level-3-symbol-4 .symbol-4-line-4 {
+  transform: rotate(90deg) translate(10px, -10px);
+}
+
+.level-3-symbols {
+  left: 40px;
+  opacity: 0;
+  position: absolute;
+  top: 7px;
+  transition: opacity 0.3s;
+  width: 148px;
+}
+
+.level-3-trigger {
+  left: 700px;
+  position: absolute;
+  top: 400px;
+}
+
+.level-3-trigger .hoverable {
+  border: 2px solid #ba81e6;
+  border-radius: 50%;
+  height: 34px;
+  transition: border 0.3s, background 0.3s;
+  width: 34px;
+}
+
+.level-3-trigger:hover .hoverable {
+  border: 2px solid white;
+}
+
+.level-3-trigger:hover .level-3-symbols {
+  opacity: 1;
+}
+
+.level-3-trigger:active .hoverable {
+  background: white;
+}
+
+.level-4 {
+  background: #9be650;
+}
+
 
 .hide {
   display: none;

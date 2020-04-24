@@ -1,4 +1,4 @@
-function reportWindowSize(callback) {
+function reportWindowSize() {
   var levelOne = document.getElementById('level-1');
 
   if (levelOne == null) { return false }
@@ -10,16 +10,14 @@ function reportWindowSize(callback) {
   var triggerY = trigger.offsetTop;
 
   if( (windowHeight <= triggerY) && (windowWidth <= triggerX) ) {
-    document.getElementsByTagName('body')[0].className = 'level-2';
-    levelOne.remove();
-    callback();
+    setNextLevel(1, initLevel2());
   }
 
 }
 
-function windowResize(callback) {
+function windowResize() {
   window.onresize = function(){
-   reportWindowSize(callback);
+   reportWindowSize();
   }
 }
 
@@ -36,12 +34,10 @@ function setTriggerPosition() {
 function getRandomInt(min, max) {
   let randomNumber = Math.random() * (max - min) + min;
 
-  console.log(randomNumber);
-
   return Math.floor(randomNumber);
 }
 
-window.initLevel1 = function(callback) {
+window.initLevel1 = function() {
   setTriggerPosition();
-  windowResize(callback);
+  windowResize();
 }
