@@ -31,19 +31,23 @@ body.level-1 {
   width: 2px;
 }
 
-.angle-rot-45 {
-  transform: rotate(45deg);
+.angle-down,
+.symbol-40 {
+  transform: rotate(45deg) translate(7px, 0px);
 }
 
-.angle-rot-135 {
+.angle-left ,
+.symbol-37 {
   transform: rotate(135deg);
 }
 
-.angle-rot-225 {
-  transform: rotate(225deg);
+.angle-up,
+.symbol-38 {
+  transform: rotate(225deg) translate(0px, 7px);
 }
 
-.angle-rot-315 {
+.angle-right,
+.symbol-39 {
   transform: rotate(315deg);
 }
 

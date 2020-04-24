@@ -28,13 +28,12 @@ function setTriggerPosition() {
   let windowWidth = window.innerWidth;
   let trigger = document.querySelector('.level-1-trigger');
 
-  trigger.style.top = [getRandomInt(windowHeight - 10), 'px'].join('');
-  trigger.style.left = [getRandomInt(windowWidth - 10), 'px'].join('');
+  trigger.style.top = [getRandomInt( 400, windowHeight - 10), 'px'].join('');
+  trigger.style.left = [getRandomInt(900, windowWidth - 10), 'px'].join('');
   trigger.style.display = 'block';
 }
 
-function getRandomInt(max) {
-  let min = 500;
+function getRandomInt(min, max) {
   let randomNumber = Math.random() * (max - min) + min;
 
   console.log(randomNumber);
