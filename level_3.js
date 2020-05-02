@@ -1,22 +1,22 @@
 
 function completeLevel() {
-  setNextLevel(3);
+  setNextLevel(3, initLevel4());
 }
 
 
-window.initLevel3 = function() {
+window.initLevel3 = () => {
   const trigger = document.querySelector('.level-3-trigger');
   var timer;
 
-  trigger.addEventListener("mousedown", function(){
+  trigger.addEventListener("mousedown", () =>{
     timer = setTimeout(completeLevel, 4000);
   });
 
-  trigger.addEventListener("mouseup", function(){
+  trigger.addEventListener("mouseup", () =>{
     clearTimeout(timer);
   });
 
-  trigger.addEventListener("mouseout", function(){
+  trigger.addEventListener("mouseout", () =>{
     clearTimeout(timer);
   });
 }

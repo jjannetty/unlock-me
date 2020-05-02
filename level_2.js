@@ -66,7 +66,7 @@ function pressedKeysMatchSolution(pressedKeys, solution) {
 
 
 
-window.initLevel2 = function() {
+window.initLevel2 = () => {
   console.log('level 2 started')
   trackKeyStrokes();
 }

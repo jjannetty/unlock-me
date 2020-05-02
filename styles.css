@@ -170,6 +170,42 @@ body {
   background: #9be650;
 }
 
+.level-4-line {
+  border: 6px solid #9be650;
+  background: white;
+  position: absolute;
+}
+
+.level-4-line-1 {
+  border-radius: 1.5px;
+  top: 400px;
+  left: 600px;
+  height: 3px;
+  width: 400px;
+}
+
+.level-4-end {
+  background: white;
+  border-radius: 50%;
+  height: 5px;
+  right: -2.5px;
+  margin-top: -2.5px;
+  position: absolute;
+  top: 50%;
+  width: 5px;
+}
+
+.level-4-start {
+  background: white;
+  border-radius: 50%;
+  height: 5px;
+  margin-top: -2.5px;
+  position: absolute;
+  left: -2.5px;
+  top: 50%;
+  width: 5px;
+}
+
 
 .hide {
   display: none;

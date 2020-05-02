@@ -16,7 +16,7 @@ function reportWindowSize() {
 }
 
 function windowResize() {
-  window.onresize = function(){
+  window.onresize = () => {
    reportWindowSize();
   }
 }
@@ -37,7 +37,7 @@ function getRandomInt(min, max) {
   return Math.floor(randomNumber);
 }
 
-window.initLevel1 = function() {
+window.initLevel1 = () => {
   setTriggerPosition();
   windowResize();
 }
