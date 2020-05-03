@@ -171,15 +171,15 @@ body {
 }
 
 .level-4-line {
-  border: 6px solid #9be650;
+  border: 8px solid #9be650;
   background: white;
   position: absolute;
 }
 
 .level-4-line-1 {
   border-radius: 1.5px;
-  top: 400px;
-  left: 600px;
+  top: 300px;
+  left: 300px;
   height: 3px;
   width: 400px;
 }
@@ -187,23 +187,27 @@ body {
 .level-4-end {
   background: white;
   border-radius: 50%;
-  height: 5px;
-  right: -2.5px;
-  margin-top: -2.5px;
+  height: 12px;
+  right: -8px;
+  margin-top: -6px;
   position: absolute;
   top: 50%;
-  width: 5px;
+  width: 12px;
 }
 
 .level-4-start {
   background: white;
   border-radius: 50%;
-  height: 5px;
-  margin-top: -2.5px;
+  height: 12px;
+  margin-top: -6px;
   position: absolute;
-  left: -2.5px;
+  left: -8px;
   top: 50%;
-  width: 5px;
+  width: 12px;
+}
+
+.level-5 {
+  background: #ff3e30;
 }
 
 
